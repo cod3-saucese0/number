@@ -1,0 +1,203 @@
+local MBMXUI = Instance.new("ScreenGui")
+local MBM_UI = Instance.new("Frame")
+local _13 = Instance.new("UICorner")
+local _12 = Instance.new("UIStroke")
+local _6 = Instance.new("TextLabel")
+local _14 = Instance.new("UIStroke")
+local _8 = Instance.new("TextButton")
+local _16 = Instance.new("UICorner")
+local _9 = Instance.new("TextButton")
+local _15 = Instance.new("UICorner")
+local _7 = Instance.new("ImageLabel")
+local _10 = Instance.new("ImageButton")
+local _5 = Instance.new("TextLabel")
+local _1 = Instance.new("TextLabel")
+local _3 = Instance.new("TextLabel")
+local _2 = Instance.new("TextLabel")
+local _4 = Instance.new("TextLabel")
+local _11 = Instance.new("ImageButton")
+local _19 = Instance.new("UICorner")
+
+-- Properties:
+
+MBMXUI.Name = "MBMXUI"
+MBMXUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MBM_UI.Name = "MBM_UI"
+MBM_UI.Parent = MBMXUI
+MBM_UI.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+MBM_UI.BackgroundTransparency = 0.300
+MBM_UI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_UI.BorderSizePixel = 0
+MBM_UI.Position = UDim2.new(0.265306145, 0, 0.224489793, 0)
+MBM_UI.Size = UDim2.new(0, 372, 0, 293)
+MBM_UI.Draggable = true -- Cho phép giao diện có thể di chuyển được
+
+
+_13.Name = "13"
+_13.Parent = MBM_UI
+
+_12.Color = Color3.fromRGB(7, 255, 205)
+_12.Thickness = 1.4500000476837158
+_12.Name = "12"
+_12.Parent = MBM_UI
+
+_6.Name = "6"
+_6.Parent = MBM_UI
+_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_6.BackgroundTransparency = 1.000
+_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_6.BorderSizePixel = 0
+_6.Position = UDim2.new(0.0815289468, 0, 0, 0)
+_6.Size = UDim2.new(0, 200, 0, 50)
+_6.Font = Enum.Font.LuckiestGuy
+_6.Text = "MBM AUTO BOUNTY"
+_6.TextColor3 = Color3.fromRGB(112, 19, 193)
+_6.TextSize = 27.000
+
+_14.Name = "14"
+_14.Parent = _6
+
+_8.Name = "8"
+_8.Parent = MBM_UI
+_8.BackgroundColor3 = Color3.fromRGB(103, 101, 97)
+_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_8.BorderSizePixel = 0
+_8.Position = UDim2.new(0.0271763131, 0, 0.825799286, 0)
+_8.Size = UDim2.new(0, 93, 0, 39)
+_8.Font = Enum.Font.SourceSans
+_8.Text = "Skip"
+_8.TextColor3 = Color3.fromRGB(255, 202, 11)
+_8.TextSize = 33.000
+_8.MouseButton1Down:Connect(function()
+	print("8")
+end)
+
+_16.Name = "16"
+_16.Parent = _8
+
+_9.Name = "9"
+_9.Parent = MBM_UI
+_9.BackgroundColor3 = Color3.fromRGB(103, 101, 97)
+_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_9.BorderSizePixel = 0
+_9.Position = UDim2.new(0.326115787, 0, 0.825799286, 0)
+_9.Size = UDim2.new(0, 93, 0, 39)
+_9.Font = Enum.Font.SourceSans
+_9.Text = "Reset"
+_9.TextColor3 = Color3.fromRGB(255, 202, 11)
+_9.TextSize = 33.000
+_9.MouseButton1Down:Connect(function()
+	print("9")
+end)
+
+_15.Name = "15"
+_15.Parent = _9
+
+_7.Name = "7"
+_7.Parent = MBM_UI
+_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_7.BorderSizePixel = 0
+_7.Position = UDim2.new(0.0539280213, 0, 0.137633204, 0)
+_7.Size = UDim2.new(0, 184, 0, 184)
+_7.Image = game.Players:GetUserThumbnailAsync(
+	game.Players.LocalPlayer.UserId,
+	Enum.ThumbnailType.AvatarThumbnail,
+	Enum.ThumbnailSize.Size420x420
+)
+
+_19.Name = "19"
+_19.Parent = _7
+
+_10.Name = "10"
+_10.Parent = MBM_UI
+_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_10.BackgroundTransparency = 1.000
+_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_10.BorderSizePixel = 0
+_10.Position = UDim2.new(0.88981235, 0, 0.0344083011, 0)
+_10.Size = UDim2.new(0, 35, 0, 35)
+_10.Image = "rbxassetid://17222467571"
+
+_5.Name = "5"
+_5.Parent = MBM_UI
+_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_5.BackgroundTransparency = 1.000
+_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_5.BorderSizePixel = 0
+_5.Position = UDim2.new(0.620172262, 0, 0.137633204, 0)
+_5.Size = UDim2.new(0, 112, 0, 50)
+_5.Font = Enum.Font.SourceSans
+_5.Text = "Curent Bounty :"
+_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+_5.TextSize = 18.000
+
+_1.Name = "1"
+_1.Parent = MBM_UI
+_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1.BackgroundTransparency = 1.000
+_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0.620172262, 0, 0.30967474, 0)
+_1.Size = UDim2.new(0, 112, 0, 50)
+_1.Font = Enum.Font.SourceSans
+_1.Text = "Time Elapsed :"
+_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1.TextSize = 18.000
+
+_3.Name = "3"
+_3.Parent = MBM_UI
+_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3.BackgroundTransparency = 1.000
+_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_3.BorderSizePixel = 0
+_3.Position = UDim2.new(0.620172262, 0, 0.481716216, 0)
+_3.Size = UDim2.new(0, 112, 0, 50)
+_3.Font = Enum.Font.SourceSans
+_3.Text = "Client Time Elapsed :"
+_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3.TextSize = 18.000
+
+_2.Name = "2"
+_2.Parent = MBM_UI
+_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2.BackgroundTransparency = 1.000
+_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_2.BorderSizePixel = 0
+_2.Position = UDim2.new(0.620172262, 0, 0.653757751, 0)
+_2.Size = UDim2.new(0, 112, 0, 50)
+_2.Font = Enum.Font.SourceSans
+_2.Text = "ty @username "
+_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2.TextSize = 18.000
+
+_4.Name = "4"
+_4.Parent = MBM_UI
+_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_4.BackgroundTransparency = 1.000
+_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_4.BorderSizePixel = 0
+_4.Position = UDim2.new(0.620172262, 0, 0.791390955, 0)
+_4.Size = UDim2.new(0, 112, 0, 50)
+_4.Font = Enum.Font.SourceSans
+_4.Text = "for using mbm hub"
+_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+_4.TextSize = 18.000
+
+_11.Name = "11"
+_11.Parent = MBMXUI
+_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_11.BackgroundTransparency = 1.000
+_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_11.BorderSizePixel = 0
+_11.Position = UDim2.new(0.0612244867, 0, 0.183673471, 0)
+_11.Size = UDim2.new(0, 60, 0, 60)
+_11.Image = "rbxassetid://17222481411"
+_11.Draggable = true
+_11.MouseButton1Down:Connect(function()
+		MBM_UI.Visible = not MBM_UI.Visible
+print("1")
+end)
+	
+	
